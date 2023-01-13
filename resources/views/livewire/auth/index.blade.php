@@ -3,12 +3,9 @@
         <h3 class="text-center mt-3">LiveWire</h3>
 
         @if ($showRegister)
-            Register
+            <livewire:auth.register />
         @else
-            <div class="p-3">
-                <label for="eamil">Email</label>
-                <input type="email" class="form-control" placeholder="johndoe@gmail.com"> 
-            </div>
+            <livewire:auth.login />
         @endif
     </div>
 </div>
